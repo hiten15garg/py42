@@ -8,7 +8,7 @@ from deepface import DeepFace
 from scipy.spatial.distance import cosine
 
 # Path to images
-path = r'C:\Users\Davi\PycharmProjects\pythonProject\Material'
+path = r'C:\Users\Lenovo\OneDrive\Desktop\py42\assets'
 images = []
 classNames = []
 myList = os.listdir(path)
@@ -51,7 +51,7 @@ except FileNotFoundError:
         pickle.dump(encodeListKnown, file)
         print("DeepFace embeddings computed and saved.")
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while True:
     success, img = cap.read()
