@@ -1,0 +1,5 @@
+# environmental variable file
+.env/
+
+#assets folder 
+assets/
